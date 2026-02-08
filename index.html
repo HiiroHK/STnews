@@ -1,13 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>stnews</title>
+    <title>STnews</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+        <h1 class="title">STnews</h1>
+        <p class="subtitle">
+          Seu site de notícias sobre o mundo automotivo e virtual
+        </p>
+      </div>
+
+      <!-- cards com notícias -->
+      <div class="grid">
+        <div class="card">
+          <!-- header do card -->
+          <div class="card-header">
+            <p class="card-number">1</p>
+            <h1 class="card-title">titulo</h1>
+          </div>
+
+          <!-- conteúdo do site -->
+          <div class="card-content bordered">
+            <div>area da imagem</div>
+            <div>area do conteúdo</div>
+            <div>area do video</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- header do card -->
+          <div class="card-header">
+            <p class="card-number">2</p>
+            <h1 class="card-title">titulo</h1>
+          </div>
+
+          <!-- conteúdo do site -->
+          <div class="card-content">
+            <div>area da imagem</div>
+            <div>area do conteúdo</div>
+            <div>area do podcast</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- header do card -->
+          <div class="card-header">
+            <p class="card-number">3</p>
+            <h1 class="card-title">titulo</h1>
+          </div>
+
+          <!-- conteúdo do site -->
+          <div class="card-content">
+            <div>area da imagem</div>
+            <div>area do conteúdo</div>
+            <div>area do video</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div>
+          <h1>Equipe STnews</h1>
+          <p>Criadores</p>
+        </div>
+
+        <div class="team">
+          <div class="member">
+            <h1 class="avatar">1</h1>
+            <p>Nome</p>
+          </div>
+
+          <div class="member">
+            <h1 class="avatar">2</h1>
+            <p>Nome</p>
+          </div>
+
+          <div class="member">
+            <h1 class="avatar">3</h1>
+            <p>Nome</p>
+          </div>
+
+          <div class="member">
+            <h1 class="avatar">4</h1>
+            <p>Nome</p>
+          </div>
+
+          <div class="member">
+            <h1 class="avatar">5</h1>
+            <p>Nome</p>
+          </div>
+        </div>
+
+        <div>
+          <h1>Site desenvolvido para fornecimento de noticias</h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

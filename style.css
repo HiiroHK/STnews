@@ -1,0 +1,160 @@
+/* reset mínimo para ficar mais próximo do Tailwind */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+/* mx-10 my-6 */
+.container {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #2563eb; /* blue-600 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem;
+  padding-top: 2rem; /* py-8 */
+  padding-bottom: 2rem;
+  border-radius: 1rem; /* rounded-2xl */
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2.5rem; /* space-y-10 */
+}
+
+.title {
+  font-weight: 500; /* font-medium */
+  font-size: 1.875rem; /* text-3xl */
+  line-height: 2.25rem;
+  color: white;
+}
+
+.subtitle {
+  font-weight: 300; /* font-light */
+  font-size: 1.25rem; /* text-xl */
+  line-height: 1.75rem;
+  color: white;
+}
+
+/* GRID DE CARDS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* grid-cols-3 */
+  gap: 1rem; /* gap-4 */
+  margin-top: 1.5rem; /* mt-6 */
+}
+
+.card {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* HEADER DO CARD */
+
+.card-header {
+  background-color: #60a5fa; /* blue-400 */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem;
+}
+
+.card-number {
+  background-color: #d97706; /* amber-600 */
+  width: 2rem; /* size-8 */
+  height: 2rem;
+  border-bottom-left-radius: 9999px; /* rounded-b-full */
+  border-bottom-right-radius: 9999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem; /* text-2xl */
+  line-height: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+/* CONTEÚDO CARD */
+
+.card-content {
+  padding: 0.75rem;
+  border-left: 1px solid rgb(229, 231, 235); /* gray-200 */
+  border-right: 1px solid rgb(229, 231, 235);
+  border-bottom: 1px solid rgb(229, 231, 235);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #2563eb;
+  padding: 1rem; /* p-4 */
+  border-radius: 1rem;
+  margin-top: 1rem; /* mt-4 */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* space-y-4 */
+
+  color: white;
+}
+
+/* EQUIPE */
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* space-x-4 */
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  background-color: #93c5fd; /* blue-300 */
+  width: 3.75rem; /* size-15 */
+  height: 3.75rem;
+  border-radius: 9999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem; /* text-2xl */
+}
